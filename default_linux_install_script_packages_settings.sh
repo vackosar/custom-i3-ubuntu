@@ -28,7 +28,7 @@ ln -s ~/Downloads ~/downloads ||true;
 INFO install general packages
 sudo apt install apt-transport-https curl;
 sudo snap install intellij-idea-ultimate --classic;
-sudo apt install -y terminator thunderbird i3 libreoffice vim pavucontrol xfce4-power-manager keepass2 vlc build-essential python-dev python-tk calibre;
+sudo apt install -y terminator i3 libreoffice vim pavucontrol xfce4-power-manager keepass2 vlc build-essential python-dev python-tk calibre;
 sudo apt remove -y gnome-terminal;
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/downloads/google-chrome-stable_current_amd64.deb;
 sudo dpkg -i ~/downloads/google-chrome-stable_current_amd64.deb;
@@ -87,7 +87,11 @@ createWebLinkApp.sh https://www.youtube.com youtube
 
 INFO comms
 sudo snap install skype --classic;
+setsid skype;
 createWebLinkApp.sh https://www.slack.com slack;
+setsid slack;
+sudo apt install thunderbird;
+setsid thunderbird;
 
 
 INFO I3 gnome
