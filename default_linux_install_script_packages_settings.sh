@@ -4,6 +4,9 @@ INFO() {
   echo "$@";
 }
 
+INFO update
+sudo apt update && sudo apt upgrade -y
+
 
 INFO ssh setup
 
