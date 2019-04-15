@@ -32,6 +32,17 @@ sudo apt install -y terminator i3 libreoffice vim pavucontrol xfce4-power-manage
 sudo apt remove -y gnome-terminal;
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/downloads/google-chrome-stable_current_amd64.deb;
 sudo dpkg -i ~/downloads/google-chrome-stable_current_amd64.deb;
+sudo apt install virtualbox nodejs python3.7 python3.7-dev;
+
+
+INFO install Anki
+pushd ~/downloads;
+wget https://apps.ankiweb.net/downloads/current/anki-2.1.11-linux-amd64.tar.bz2 -O anki.tar.bz2;
+tar xjf anki.tar.bz2;
+cd anki*amd64;
+sudo make install;
+popd;
+setsid anki;
 
 
 INFO md2pdf
@@ -52,6 +63,13 @@ git config --global alias.st status;
 
 INFO custom bashrc, profile, bin
 cp -ran home/* ~/;
+
+
+INFO install Syncthing
+sudo apt install syncthing -y;
+# copy systemd to home dir
+systemctl --user enable syncthing.service;
+systemctl --user start syncthing.service;
 
 
 echo "source .profile-custom.sh" >> ~/.profile
