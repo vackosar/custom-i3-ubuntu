@@ -65,6 +65,12 @@ INFO custom bashrc, profile, bin
 cp -ran home/* ~/;
 
 
+INFO install youtube-dl
+sudo apt install python-pip -y
+pip install youtube-dl;
+ln -s ~/.local/bin/youtube-dl ~/bin/youtube-dl || true;
+
+
 INFO install Syncthing
 sudo apt install syncthing -y;
 # copy systemd to home dir
