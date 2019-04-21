@@ -37,7 +37,9 @@ sudo apt install -y virtualbox nodejs python3.7 python3.7-dev;
 
 INFO install Anki
 pushd ~/downloads;
-wget https://apps.ankiweb.net/downloads/current/anki-2.1.11-linux-amd64.tar.bz2 -O anki.tar.bz2;
+if [ ! -f anki.tar.bz2 ]; then
+	wget https://apps.ankiweb.net/downloads/current/anki-2.1.11-linux-amd64.tar.bz2 -O anki.tar.bz2;
+fi;
 tar xjf anki.tar.bz2;
 cd anki*amd64;
 sudo make install;
