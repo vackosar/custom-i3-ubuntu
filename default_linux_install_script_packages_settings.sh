@@ -42,7 +42,7 @@ tar xjf anki.tar.bz2;
 cd anki*amd64;
 sudo make install;
 popd;
-setsid anki;
+setsid anki|| true;
 
 
 INFO md2pdf
@@ -111,11 +111,11 @@ createWebLinkApp.sh https://www.youtube.com youtube
 
 INFO comms
 sudo snap install skype --classic;
-setsid skype;
+setsid skype|| true;
 createWebLinkApp.sh https://www.slack.com slack;
-setsid slack;
+setsid slack ||true;
 sudo apt install -y thunderbird;
-setsid thunderbird;
+setsid thunderbird ||true;
 
 
 INFO I3 gnome
