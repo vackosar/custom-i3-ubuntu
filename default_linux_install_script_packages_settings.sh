@@ -8,6 +8,16 @@ INFO update
 sudo apt update && sudo apt upgrade -y
 
 
+#INFO Remap keys?
+sudo sed -i 's/^XKBOPTIONS=.*/XKBOPTIONS="caps:swapescape"/' /etc/default/keyboard;
+#sudo apt-get install -y console-data
+#cat - > ~/.keystrings <<EOF
+#keycode 1 = Caps_Lock
+#keycode 58 = Escape
+#EOF
+# on startup: sudo loadkeys ~/.keystrings
+
+
 INFO ssh setup
 
 if [ ! -e ~/.ssh/id_rsa.pub ]; then

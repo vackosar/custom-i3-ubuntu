@@ -219,7 +219,7 @@ exec --no-startup-id gnome-flashback
 exec_always --no-startup-id gnome-power-manager
 
 #exec xmodmap /home/vackosar/.xmodmaprc 
-exec setxkbmap -option caps:escape
+#exec setxkbmap -option caps:escape
 #exec dex -a -s /home/vackosar/.config/autostart/ 
 #exec gnome-keyring-daemon
 exec nvidia-settings -l
