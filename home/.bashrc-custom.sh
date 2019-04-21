@@ -22,3 +22,8 @@ alias cdTsk='cd "$HOME/tsk"'
 /home/vackosar/tsk/update.sh 2>/dev/null &
 
 export PATH="$PATH:$HOME/bin";
+# The next line enables shell command completion for gcloud.
+#if [ -f '/home/vackosar/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/home/vackosar/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+#set -o vi
+export EDITOR=vi

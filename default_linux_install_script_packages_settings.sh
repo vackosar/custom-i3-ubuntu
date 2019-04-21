@@ -16,7 +16,7 @@ fi
 
 
 INFO install dropbox 
-sudo apt install make;
+sudo apt install -y make;
 ln -s ~/Dropbox ~/dropbox || true;
 
 
@@ -26,13 +26,13 @@ ln -s ~/Downloads ~/downloads ||true;
 
 
 INFO install general packages
-sudo apt install apt-transport-https curl;
+sudo apt install -y apt-transport-https curl;
 sudo snap install intellij-idea-ultimate --classic;
-sudo apt install -y terminator i3 libreoffice vim pavucontrol xfce4-power-manager keepass2 vlc build-essential python-dev python-tk calibre;
+sudo apt install -y terminator i3 libreoffice vim pavucontrol xfce4-power-manager keepass2 vlc build-essential python-dev python-tk calibre ffmpeg;
 sudo apt remove -y gnome-terminal;
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/downloads/google-chrome-stable_current_amd64.deb;
 sudo dpkg -i ~/downloads/google-chrome-stable_current_amd64.deb;
-sudo apt install virtualbox nodejs python3.7 python3.7-dev;
+sudo apt install -y virtualbox nodejs python3.7 python3.7-dev;
 
 
 INFO install Anki
@@ -46,7 +46,7 @@ setsid anki;
 
 
 INFO md2pdf
-sudo apt install pandoc wkhtmltopdf;
+sudo apt install -y pandoc wkhtmltopdf;
 
 
 INFO Git config
@@ -66,13 +66,13 @@ cp -ran home/* ~/;
 
 
 INFO install youtube-dl
-sudo apt install python-pip -y
+sudo apt install -y python-pip
 pip install youtube-dl;
 ln -s ~/.local/bin/youtube-dl ~/bin/youtube-dl || true;
 
 
 INFO install Syncthing
-sudo apt install syncthing -y;
+sudo apt install -y syncthing;
 # copy systemd to home dir
 systemctl --user enable syncthing.service;
 systemctl --user start syncthing.service;
@@ -114,7 +114,7 @@ sudo snap install skype --classic;
 setsid skype;
 createWebLinkApp.sh https://www.slack.com slack;
 setsid slack;
-sudo apt install thunderbird;
+sudo apt install -y thunderbird;
 setsid thunderbird;
 
 
