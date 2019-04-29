@@ -19,7 +19,7 @@ foreach () { while IFS= read -r l; do eval "$@"; done; }
 alias t="touch"
 alias cdTsk='cd "$HOME/tsk"'
 
-/home/vackosar/tsk/update.sh 2>/dev/null &
+#/home/vackosar/tsk/update.sh 2>/dev/null &
 
 export PATH="$PATH:$HOME/bin";
 # The next line enables shell command completion for gcloud.
