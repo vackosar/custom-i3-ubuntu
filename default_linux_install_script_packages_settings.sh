@@ -37,6 +37,7 @@ ln -s ~/Downloads ~/downloads ||true;
 
 INFO install general packages
 sudo apt install -y apt-transport-https curl;
+sudo apt install autoconf -y
 sudo snap install intellij-idea-ultimate --classic;
 sudo apt install -y terminator i3 libreoffice vim pavucontrol xfce4-power-manager keepass2 vlc build-essential python-dev python-tk calibre ffmpeg;
 sudo apt remove -y gnome-terminal;
