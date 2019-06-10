@@ -40,7 +40,7 @@ sudo apt install -y apt-transport-https
 sudo apt install -y curl nmap;
 sudo apt install autoconf libtool -y;
 sudo snap install intellij-idea-ultimate --classic;
-sudo apt install -y terminator i3 libreoffice vim pavucontrol xfce4-power-manager keepass2 vlc build-essential python-dev python-tk calibre ffmpeg;
+sudo apt install -y terminator libreoffice vim pavucontrol xfce4-power-manager keepass2 vlc build-essential python-dev python-tk calibre ffmpeg;
 sudo apt remove -y gnome-terminal;
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/downloads/google-chrome-stable_current_amd64.deb;
 sudo dpkg -i ~/downloads/google-chrome-stable_current_amd64.deb;
@@ -134,9 +134,9 @@ setsid thunderbird ||true;
 
 
 INFO I3 gnome
-sudo apt install -y i3 i3-wm
-sudo apt install -y gdm3
-sudo apt install -y gnome-flashback build-essential
+sudo apt install -y i3 i3-wm;
+sudo apt install -y gdm3 xautolock;
+sudo apt install -y gnome-flashback build-essential;
 mkdir ~/src || true;
 cd ~/src;
 git clone https://github.com/csxr/i3-gnome.git;

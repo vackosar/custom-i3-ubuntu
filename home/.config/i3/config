@@ -224,7 +224,7 @@ exec_always --no-startup-id gnome-power-manager
 #exec gnome-keyring-daemon
 exec nvidia-settings -l
 #exec gnome-screensaver
-#exec xautolock -time 20 -locker i3lock
+exec xautolock -time 2 -locker i3lock
 #exec xfce4-power-manager
 exec nm-applet
 #exec dropbox start -i
