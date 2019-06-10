@@ -224,12 +224,12 @@ exec_always --no-startup-id gnome-power-manager
 #exec gnome-keyring-daemon
 exec nvidia-settings -l
 #exec gnome-screensaver
-exec xautolock -time 2 -locker i3lock
+exec xautolock -time 1 -locker 'i3lock --image ~/downloads/doom.png'
 #exec xfce4-power-manager
 exec nm-applet
 #exec dropbox start -i
 #exec terminator
-bindsym $mod+period exec i3lock
+bindsym $mod+period exec i3lock --image ~/downloads/doom.png
 exec systemctl --user start syncthing.service
 
 #for_window [class="[.]*"] floating disable
