@@ -40,7 +40,7 @@ sudo apt install -y apt-transport-https
 sudo apt install -y curl nmap;
 sudo apt install autoconf libtool -y;
 sudo snap install intellij-idea-ultimate --classic;
-sudo apt install -y terminator libreoffice vim pavucontrol xfce4-power-manager keepass2 vlc build-essential python-dev python-tk calibre ffmpeg doublecmd-qt mtp-tools;
+sudo apt install -y terminator libreoffice vim pavucontrol xfce4-power-manager keepass2 vlc vlc-plugin-fluidsynth build-essential python-dev python-tk calibre ffmpeg doublecmd-qt mtp-tools;
 sudo apt remove -y gnome-terminal;
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/downloads/google-chrome-stable_current_amd64.deb;
 sudo dpkg -i ~/downloads/google-chrome-stable_current_amd64.deb;

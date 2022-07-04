@@ -1,5 +1,27 @@
 set clipboard^=unnamed,unnamedplus
 
+
+
+
+"set colorscheme molokai
+"" Vimdiff colors
+if &diff
+    "colorscheme diffscheme
+    "set colorscheme molokai
+    syntax off
+endif
+
+
+"set termguicolors
+
+" highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+" highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+" highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+" highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
+
+"let g:solarized_diffmode="high"
+
+
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
 " Description: A minimal, but feature rich, example .vimrc. If you are a
@@ -159,3 +181,18 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
  
 "------------------------------------------------------------
+"
+
+" do not map deleted to any buffer"
+"nnoremap d "_d
+"nnoremap D "_D
+"nnoremap "*d "*d
+"nnoremap "*D "*D
+"
+"nnoremap c "_c
+"nnoremap C "_C
+"nnoremap p "_p
+"nnoremap P "_P
+
+xnoremap p "_dP
+"nnoremap P "_P
