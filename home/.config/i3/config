@@ -213,7 +213,7 @@ bar {
 #bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 ## Custom startup apps
-exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
+exec --no-startup-id /usr/libexec/gsd-xsettings
 # exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 # Not installed on my Gnome
 exec --no-startup-id gnome-flashback
 exec_always --no-startup-id gnome-power-manager
@@ -224,12 +224,11 @@ exec_always --no-startup-id gnome-power-manager
 #exec gnome-keyring-daemon
 exec nvidia-settings -l
 #exec gnome-screensaver
-exec xautolock -time 10 -locker 'i3lock --image ~/downloads/machine-learning-disciplines-overview.png'
 #exec xfce4-power-manager
 exec nm-applet
 #exec dropbox start -i
 #exec terminator
-bindsym $mod+period exec i3lock --image ~/downloads/machine-learning-disciplines-overview.png
+#bindsym $mod+period exec i3lock --image ~/downloads/machine-learning-disciplines-overview.png
 exec systemctl --user start syncthing.service
 
 #for_window [class="[.]*"] floating disable
@@ -240,9 +239,10 @@ hide_edge_borders both
 
 bindsym Control+Escape exec --no-startup-id i3-dmenu-desktop
 
-exec terminator
+#exec terminator
 
 focus_follows_mouse no
 
 
 exec --no-startup-id xmodmap -e 'keycode 107 = super_r'
+exec --no-startup-id xmodmap -e 'keycode 107 = Menu NoSymbol Menu'
