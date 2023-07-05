@@ -1,1 +1,1 @@
-i3status | { while read status; do echo "hello | $status"; done; }
+i3status | { while read status; do echo "Don't waste time! | $status"; done; }
