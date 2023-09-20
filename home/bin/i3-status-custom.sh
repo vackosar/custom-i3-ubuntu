@@ -1,1 +1,1 @@
-i3status | { while read status; do echo "Take action to learn. Don't waste time autopiloting! 🦆 | $status"; done; }
+i3status | { while read status; do echo "$(cat ~/.my-timer.txt || true)|👨‍✈️ Pilot with correct minimal action to over-achieve your profit metrics on deadline! Direct thoughts into singular flow. Talk! 🦆 | $status"; done; }
